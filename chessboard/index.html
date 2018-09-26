@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chessboard</title>
+    <link rel="stylesheet" href="chessboardStyle.css">
+</head>
+<body>
+    <section class="board">
+
+        <ul class="row">
+            <li class="a8" onClick='selectPiece(this)'><div class="rook black"></div></li>
+            <li class="b8" onClick='selectPiece(this)'><div class="knight black"></div></li>
+            <li class="c8" onClick='selectPiece(this)'><div class="bishop black"></div></li>
+            <li class="d8" onClick='selectPiece(this)'><div class="queen black"></div></li>
+            <li class="e8" onClick='selectPiece(this)'><div class="king black"></div></li>
+            <li class="f8" onClick='selectPiece(this)'><div class="bishop black"></div></li>
+            <li class="g8" onClick='selectPiece(this)'><div class="knight black"></div></li>
+            <li class="h8" onClick='selectPiece(this)'><div class="rook black"></div></li>
+        </ul>
+        <ul class="row">
+            <li class="a7" onClick='selectPiece(this)'><div class="pawn black"></div></li>
+            <li class="b7" onClick='selectPiece(this)'><div class="pawn black"></div></li>
+            <li class="c7" onClick='selectPiece(this)'><div class="pawn black"></div></li>
+            <li class="d7" onClick='selectPiece(this)'><div class="pawn black"></div></li>
+            <li class="e7" onClick='selectPiece(this)'><div class="pawn black"></div></li>
+            <li class="f7" onClick='selectPiece(this)'><div class="pawn black"></div></li>
+            <li class="g7" onClick='selectPiece(this)'><div class="pawn black"></div></li>
+            <li class="h7" onClick='selectPiece(this)'><div class="pawn black"></div></li>
+        </ul>
+        <ul class="row">
+            <li class="a6" onClick='selectPiece(this)'></li>
+            <li class="b6" onClick='selectPiece(this)'></li>
+            <li class="c6" onClick='selectPiece(this)'></li>
+            <li class="d6" onClick='selectPiece(this)'></li>
+            <li class="e6" onClick='selectPiece(this)'></li>
+            <li class="f6" onClick='selectPiece(this)'></li>
+            <li class="g6" onClick='selectPiece(this)'></li>
+            <li class="h6" onClick='selectPiece(this)'></li>
+        </ul>
+        <ul class="row">
+            <li class="a5" onClick='selectPiece(this)'></li>
+            <li class="b5" onClick='selectPiece(this)'></li>
+            <li class="c5" onClick='selectPiece(this)'></li>
+            <li class="d5" onClick='selectPiece(this)'></li>
+            <li class="e5" onClick='selectPiece(this)'></li>
+            <li class="f5" onClick='selectPiece(this)'></li>
+            <li class="g5" onClick='selectPiece(this)'></li>
+            <li class="h5" onClick='selectPiece(this)'></li>
+        </ul>
+        <ul class="row">
+            <li class="a4" onClick='selectPiece(this)'></li>
+            <li class="b4" onClick='selectPiece(this)'></li>
+            <li class="c4" onClick='selectPiece(this)'></li>
+            <li class="d4" onClick='selectPiece(this)'></li>
+            <li class="e4" onClick='selectPiece(this)'></li>
+            <li class="f4" onClick='selectPiece(this)'></li>
+            <li class="g4" onClick='selectPiece(this)'></li>
+            <li class="h4" onClick='selectPiece(this)'></li>
+        </ul>
+        <ul class="row">
+            <li class="a3" onClick='selectPiece(this)'></li>
+            <li class="b3" onClick='selectPiece(this)'></li>
+            <li class="c3" onClick='selectPiece(this)'></li>
+            <li class="d3" onClick='selectPiece(this)'></li>
+            <li class="e3" onClick='selectPiece(this)'></li>
+            <li class="f3" onClick='selectPiece(this)'></li>
+            <li class="g3" onClick='selectPiece(this)'></li>
+            <li class="h3" onClick='selectPiece(this)'></li>
+        </ul>
+        <ul class="row">
+            <li class="a2" onClick='selectPiece(this)'><div class="pawn white"></div></li>
+            <li class="b2" onClick='selectPiece(this)'><div class="pawn white"></div></li>
+            <li class="c2" onClick='selectPiece(this)'><div class="pawn white"></div></li>
+            <li class="d2" onClick='selectPiece(this)'><div class="pawn white"></div></li>
+            <li class="e2" onClick='selectPiece(this)'><div class="pawn white"></div></li>
+            <li class="f2" onClick='selectPiece(this)'><div class="pawn white"></div></li>
+            <li class="g2" onClick='selectPiece(this)'><div class="pawn white"></div></li>
+            <li class="h2" onClick='selectPiece(this)'><div class="pawn white"></div></li>
+        </ul>
+        <ul class="row">
+            <li class="a1" onClick='selectPiece(this)'><div class="rook white"></div></li>
+            <li class="b1" onClick='selectPiece(this)'><div class="knight white"></div></li>
+            <li class="c1" onClick='selectPiece(this)'><div class="bishop white"></div></li>
+            <li class="d1" onClick='selectPiece(this)'><div class="queen white"></div></li>
+            <li class="e1" onClick='selectPiece(this)'><div class="king white"></div></li>
+            <li class="f1" onClick='selectPiece(this)'><div class="bishop white"></div></li>
+            <li class="g1" onClick='selectPiece(this)'><div class="knight white"></div></li>
+            <li class="h1" onClick='selectPiece(this)'><div class="rook white"></div></li>
+        </ul>
+        <ol>
+            <li><span>A</span></li>
+            <li><span>B</span></li>
+            <li><span>C</span></li>
+            <li><span>D</span></li>
+            <li><span>E</span></li>
+            <li><span>F</span></li>
+            <li><span>G</span></li>
+            <li><span>H</span></li>
+        </ol>
+    </section>
+    <form class="movementCross">
+        <fieldset>
+            <legend>Now the turn of</legend>
+            <label for="white">White: <input type="radio" name="color" checked id="white"></label>
+            <label for="black">Black: <input type="radio" name="color"  id="black"></label>
+        </fieldset>
+        <fieldset>
+            <legend>My move is:</legend>
+            <label for="initial">Initial position: <input type="text" id="initial"></label>
+            <label for="target">Final position: <input type="text" id="target"></label>
+        </fieldset>
+        <input type="button" class="makeAmove" onclick="makeAmove()" value="Make a move">
+    </form>
+
+    <script src="chessScript.js"></script>
+</body>
+</html>

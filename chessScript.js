@@ -1,7 +1,6 @@
-var initialAlignment = function (color, type, initialPlace) {
-    var initial;
-    initial = document.querySelector('.row li.' + initialPlace + ' div');
-    initial.classList.add(type, color);
+var removePiece = function (object) {
+    let piece = object.firstChild;
+    object.removeChild.firstChild;
 };
 
 var makeAmove = function () {
