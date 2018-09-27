@@ -100,16 +100,19 @@
         </ol>
     </section>
     <form class="movementCross">
-        <fieldset>
+        <fieldset id="colorChange">
             <legend>Now the turn of</legend>
-            <label for="white">White: <input type="radio" name="color" checked id="white"></label>
-            <label for="black">Black: <input type="radio" name="color"  id="black"></label>
+            <label for="white">White: <input type="radio" value="white" name="color" checked id="white"></label>
+            <label for="black">Black: <input type="radio" value="black" name="color"  id="black"></label>
         </fieldset>
         <fieldset>
             <legend>My move is:</legend>
             <label for="initial">Initial position: <input type="text" id="initial"></label>
             <label for="target">Final position: <input type="text" id="target"></label>
         </fieldset>
+        <textarea>Начало партии:
+ ...
+        </textarea>
         <input type="button" class="makeAmove" onclick="makeAmove()" value="Make a move">
     </form>
 

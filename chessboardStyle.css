@@ -12,7 +12,6 @@ ul, ol {
     display: flex;
     margin: 0;
     padding: 0;
-    border: 1px solid red;
 }
 li {
     position: relative;
@@ -126,15 +125,4 @@ fieldset {
     display: flex;
     flex-direction: vertical;
     justify-content: space-between;
-}
-
-.xxx {
-    clip: rect(0, 100px, 100px, 0);
-}
-
-.clip {
-    position: absolute;
-    top: 0;
-    left: 0;
-    object-fit: fill;
 }
