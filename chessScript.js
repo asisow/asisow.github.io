@@ -4,7 +4,7 @@ let removePiece = function (object) {
 };
 
 let makeAmove = function () {
-    let side = document.querySelector('input[type=radio]:checked');
+    let side = document.querySelector('input[type=radio]:not(:checked)');
     let initialPlacement = document.querySelector('#initial').value;
     let targetPlacement = document.querySelector('#target').value;
     let final = document.querySelector('.' + targetPlacement);
@@ -12,6 +12,7 @@ let makeAmove = function () {
     let piece = initial.firstChild;
     initial.removeChild(piece);
     final.appendChild(piece);
+    side.checked = true;
 };
 
 let clearBoard = function () {
@@ -30,9 +31,8 @@ let selectPiece = function (elem) {
         document.querySelector('#initial').value = elem.className;
     }
     else {
-        let
+        document.querySelector('#target').value = elem.className;
     }
-
   }
   else {
     document.querySelector('#target').value = elem.className;

@@ -118,6 +118,7 @@ ul::before {
     justify-content: start;
     align-items: flex-start;
     flex-wrap: wrap;
+    margin-left: 4vmin;
 }
 
 fieldset {
@@ -125,4 +126,8 @@ fieldset {
     display: flex;
     flex-direction: vertical;
     justify-content: space-between;
+}
+
+textarea {
+    rows: 4;
 }
