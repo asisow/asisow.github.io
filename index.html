@@ -65,8 +65,8 @@
             <li class="d3" onClick='selectPiece(this)'></li>
             <li class="e3" onClick='selectPiece(this)'></li>
             <li class="f3" onClick='selectPiece(this)'></li>
-            <li class="g3" onClick='selectPiece(this)'></li>
-            <li class="h3" onClick='selectPiece(this)'></li>
+            <li class="g3 lightenMove" onClick='selectPiece(this)'></li>
+            <li class="h3 lightenMove" onClick='selectPiece(this)'></li>
         </ul>
         <ul class="row">
             <li class="a2" onClick='selectPiece(this)'><div class="pawn white"></div></li>
@@ -85,7 +85,7 @@
             <li class="d1" onClick='selectPiece(this)'><div class="queen white"></div></li>
             <li class="e1" onClick='selectPiece(this)'><div class="king white"></div></li>
             <li class="f1" onClick='selectPiece(this)'><div class="bishop white"></div></li>
-            <li class="g1" onClick='selectPiece(this)'><div class="knight white"></div></li>
+            <li class="g1 " onClick='selectPiece(this)'><div class="knight white"></div></li>
             <li class="h1" onClick='selectPiece(this)'><div class="rook white"></div></li>
         </ul>
         <ol>
@@ -99,22 +99,28 @@
             <li><span>H</span></li>
         </ol>
     </section>
-    <form class="movementCross">
+    <form class='movementCross'>
         <fieldset id="colorChange">
             <legend>Now the turn of</legend>
             <label for="white">White: <input type="radio" value="white" name="color" checked id="white"></label>
             <label for="black">Black: <input type="radio" value="black" name="color"  id="black"></label>
         </fieldset>
-        <fieldset>
+        <fieldset id="'isAMove">
             <legend>My move is:</legend>
-            <label for="initial">Initial position: <input type="text" id="initial"></label>
-            <label for="target">Final position: <input type="text" id="target"></label>
+            <input type="text" id="initial">
+            <input type="text" id="typeOfMove">
+            <input type="text" id="target">
         </fieldset>
-        <select name='history' id="hist">Начало партии:
-            <option value="...">Начало партии</option>
+        <select name='history' id="hist" multiple>Начало партии:
+            <option value="1">e2-e4</option>
+            <option value="1">e2-e4</option>
+            <option value="1">e2-e4</option>
+            <option value="1">e2-e4</option>
+            <option value="1">e2-e4</option>
         </select>
         <input type="button" class="makeAmove" onclick="makeAmove()" value="Make a move">
-    </form>
+        <input type="button" class="clearBoard" onclick="clearBoard()" value="Clear board">
+   </form>
 
     <script src="chessScript.js"></script>
 </body>

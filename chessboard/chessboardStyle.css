@@ -2,13 +2,9 @@ body {
     background-color: forestgreen;
     counter-reset: number 9;
     display: flex;
-    flex-direction: column;
     justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    margin: 0;
-    padding: 0;
 }
+
 ul, ol {
     list-style: none;
     width: 80vmin;
@@ -20,7 +16,7 @@ ul, ol {
 li {
     position: relative;
     min-width: 10vmin;
-    display: table-row;
+    display: flex;
     justify-content: center;
 }
 ol li {
@@ -32,7 +28,6 @@ ul li {
     align-items: center;
     background-color: white;
     z-index: 1;
-    display: table-cell;
 }
 
 ul li:nth-child(2n) {
@@ -120,38 +115,19 @@ ul::before {
 
 .movementCross {
     display: flex;
+    justify-content: start;
+    align-items: flex-start;
     flex-wrap: wrap;
-    align-items: baseline;
-    margin-left: 3vmin;
-    min-width: 50 vmin;
+    margin-left: 4vmin;
 }
 
 fieldset {
+    flex-wrap: wrap;
     display: flex;
+    flex-direction: vertical;
     justify-content: space-between;
 }
 
-input[type='text'] {
-    width: 4em;
-    background-color: forestgreen;
-    display: inline-block;
-}
-
-#typeOfMove {
-    width: 1em;
-}
-
-#hist {
-    disabled;
-    size: 6;
-    width: 10vmin;
-}
-
-.lightenMove {
-    filter: sepia(60%)
-}
-ol li {
-    text-align: right;
-    height: 1em;
-    border: 1px solid red;
+textarea {
+    rows: 4;
 }
