@@ -11,7 +11,7 @@ body {
 }
 ul, ol {
     list-style: none;
-    width: 80vmin;
+    width: 100%;
     height: 10vmin;
     display: flex;
     margin: 0;
@@ -24,7 +24,8 @@ li {
     justify-content: center;
 }
 ol li {
-    font-size: 5vmin;
+    font-size: 4vmin;
+
 }
 ul li {
     display: flex;
@@ -126,11 +127,6 @@ ul::before {
     min-width: 50 vmin;
 }
 
-fieldset {
-    display: flex;
-    justify-content: space-between;
-}
-
 input[type='text'] {
     width: 4em;
     background-color: forestgreen;
@@ -140,6 +136,10 @@ input[type='text'] {
 #typeOfMove {
     width: 1em;
 }
+
+ .moveCoordinates {
+    display: inline-block !important;
+ }
 
 #hist {
     disabled;
@@ -151,7 +151,13 @@ input[type='text'] {
     filter: sepia(60%)
 }
 ol li {
-    text-align: right;
+    text-align: center;
     height: 1em;
     border: 1px solid red;
+}
+ol::before {
+    content: '0';
+    visibility: hidden;
+    font-size: 3em;
+    font-family: "Baskerville Old Face", serif;
 }

@@ -13,13 +13,14 @@ let clearMCross = () => {
 
 let lightenMoveArea = (piece) => {
 console.log(piece);
-    if (piece.classList[0] == 'pawn') {
+let letterRow = 'abcdefgh';
+    if (piece.classList[0] === 'pawn') {
         let x = piece.parentElement.classList.value[0];
         let y = piece.parentElement.classList.value[1];
         console.log(x);
         console.log(y);
         for (let i = 1; i < 2; i += 1) {
-            y = letterRow.prototype.findIndex(y);
+            y = letterRow.indexOf(x) + 1;
             console.log(y);
         }
     }
