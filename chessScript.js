@@ -11,17 +11,22 @@ let clearMCross = () => {
     document.querySelector('#typeOfMove').value = '';
 }
 
+let makeAnOption = (piece, initialPlacement, targetPlacement) => {
+    let select = document.querySelector('#hist');
+    let type = document.querySelector('#typeOfMove').value;
+    console.log(type);
+    let option = document.createElement('option')
+    option.innerHTML =  piece.classList[0] + initialPlacement + type + targetPlacement;
+    select.appendChild(option);
+}
+
 let lightenMoveArea = (piece) => {
-console.log(piece);
 let letterRow = 'abcdefgh';
     if (piece.classList[0] === 'pawn') {
         let x = piece.parentElement.classList.value[0];
         let y = piece.parentElement.classList.value[1];
-        console.log(x);
-        console.log(y);
         for (let i = 1; i < 2; i += 1) {
             y = letterRow.indexOf(x) + 1;
-            console.log(y);
         }
     }
 }
@@ -37,13 +42,16 @@ let makeAmove = function () {
     final.appendChild(piece);
     side.checked = true;
     clearMCross();
+    makeAnOption(piece, initialPlacement, targetPlacement);
 };
 
 let clearBoard = function () {
     let list = document.querySelectorAll('.row li');
     for (let i = 0; i < list.length; i += 1) {
-        let item = list[i].querySelector('div');
-        item.removeChild();
+        if (list[i].hasChildNodes) {
+            let item = list[i].querySelector('div');
+            list[i].removeChild();
+        }
     }
 };
 
