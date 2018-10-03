@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="e46c6d9b-924d-41c2-a1b4-dc3d57839c98" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/AVA/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/AVA/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chessboardStyle.css" beforeDir="false" afterPath="$PROJECT_DIR$/chessboardStyle.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chessScript.js" beforeDir="false" afterPath="$PROJECT_DIR$/chessScript.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -19,17 +19,8 @@
           <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/index.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="1753">
+                <state relative-caret-position="478">
                   <caret line="106" column="19" lean-forward="true" selection-start-line="106" selection-start-column="19" selection-end-line="106" selection-end-column="19" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/AVA/index.html">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-331">
-                  <caret line="42" column="29" lean-forward="true" selection-start-line="42" selection-start-column="29" selection-end-line="42" selection-end-column="29" />
                 </state>
               </provider>
             </entry>
@@ -38,20 +29,20 @@
       </split-first>
       <split-second>
         <leaf>
-          <file leaf-file-name="chessboardStyle.css" pinned="false" current-in-tab="true">
+          <file leaf-file-name="chessboardStyle.css" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/chessboardStyle.css">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-80">
-                  <caret line="116" column="24" selection-start-line="116" selection-start-column="24" selection-end-line="116" selection-end-column="24" />
+                <state relative-caret-position="583">
+                  <caret line="155" column="23" lean-forward="true" selection-start-line="155" selection-start-column="23" selection-end-line="155" selection-end-column="23" />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="chessScript.js" pinned="false" current-in-tab="false">
+          <file leaf-file-name="chessScript.js" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/chessScript.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="396">
-                  <caret line="52" column="34" lean-forward="true" selection-start-line="52" selection-start-column="34" selection-end-line="52" selection-end-column="34" />
+                <state relative-caret-position="362">
+                  <caret line="50" column="38" selection-start-line="50" selection-start-column="38" selection-end-line="50" selection-end-column="38" />
                 </state>
               </provider>
             </entry>
@@ -67,9 +58,9 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/index.html" />
-        <option value="$PROJECT_DIR$/chessScript.js" />
         <option value="$PROJECT_DIR$/chessboardStyle.css" />
         <option value="$PROJECT_DIR$/AVA/index.html" />
+        <option value="$PROJECT_DIR$/chessScript.js" />
       </list>
     </option>
   </component>
@@ -159,31 +150,31 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/chessScript.js">
+    <entry file="file://$PROJECT_DIR$/AVA/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="52" column="34" lean-forward="true" selection-start-line="52" selection-start-column="34" selection-end-line="52" selection-end-column="34" />
+        <state relative-caret-position="383">
+          <caret line="39" column="21" selection-start-line="39" selection-start-column="21" selection-end-line="39" selection-end-column="21" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/chessboardStyle.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-80">
-          <caret line="116" column="24" selection-start-line="116" selection-start-column="24" selection-end-line="116" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/AVA/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-331">
-          <caret line="42" column="29" lean-forward="true" selection-start-line="42" selection-start-column="29" selection-end-line="42" selection-end-column="29" />
+        <state relative-caret-position="583">
+          <caret line="155" column="23" lean-forward="true" selection-start-line="155" selection-start-column="23" selection-end-line="155" selection-end-column="23" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1753">
+        <state relative-caret-position="478">
           <caret line="106" column="19" lean-forward="true" selection-start-line="106" selection-start-column="19" selection-end-line="106" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chessScript.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="362">
+          <caret line="50" column="38" selection-start-line="50" selection-start-column="38" selection-end-line="50" selection-end-column="38" />
         </state>
       </provider>
     </entry>

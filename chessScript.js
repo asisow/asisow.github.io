@@ -48,9 +48,9 @@ let makeAmove = function () {
 let clearBoard = function () {
     let list = document.querySelectorAll('.row li');
     for (let i = 0; i < list.length; i += 1) {
-        if (list[i].hasChildNodes) {
+        if (list[i].hasChildNodes()) {
             let item = list[i].querySelector('div');
-            list[i].removeChild();
+            list[i].removeChild(list[i].firstChild);
         }
     }
 };
