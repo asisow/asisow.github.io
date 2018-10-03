@@ -1,3 +1,4 @@
+/*Board styles*/
 body {
     background-color: forestgreen;
     counter-reset: number 9;
@@ -51,7 +52,7 @@ ul:nth-child(2n) li {
 ul:nth-child(2n) li:nth-child(2n) {
     background-color: white;
 }
-
+/*Pieces div's styles*/
 .K  {
     display: block;
     background: url("chess sprite.png") 0 0;
@@ -113,16 +114,7 @@ ul:nth-child(2n) li:nth-child(2n) {
 .black {
     background-position-y: 0;
 }
-
-ul::before {
-    display: flex;
-    align-items: center;
-    counter-increment: number -1;
-    content: counter(number) " ";
-    font-size: 3em;
-    font-family: "Baskerville Old Face", serif;
-}
-
+/*Control element styles*/
 .movementCross {
     display: flex;
     flex-wrap: wrap;
@@ -154,6 +146,7 @@ input[type='text'] {
 .lightenMove {
     filter: sepia(60%)
 }
+/*board marks styles*/
 ol li {
     text-align: center;
     height: 1em;
@@ -161,6 +154,15 @@ ol li {
 ol::before {
     content: '0';
     visibility: hidden;
+    font-size: 3em;
+    font-family: "Baskerville Old Face", serif;
+}
+
+ul::before {
+    display: flex;
+    align-items: center;
+    counter-increment: number -1;
+    content: counter(number) " ";
     font-size: 3em;
     font-family: "Baskerville Old Face", serif;
 }
