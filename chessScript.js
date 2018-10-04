@@ -14,21 +14,9 @@ let clearMCross = () => {
 let makeAnOption = (piece, initialPlacement, targetPlacement) => {
     let select = document.querySelector('#hist');
     let type = document.querySelector('#typeOfMove').value;
-    console.log(type);
     let option = document.createElement('option')
     option.innerHTML =  piece.classList[0] + initialPlacement + type + targetPlacement;
     select.appendChild(option);
-}
-
-let lightenMoveArea = (piece) => {
-let letterRow = 'abcdefgh';
-    if (piece.classList[0] === 'pawn') {
-        let x = piece.parentElement.classList.value[0];
-        let y = piece.parentElement.classList.value[1];
-        for (let i = 1; i < 2; i += 1) {
-            y = letterRow.indexOf(x) + 1;
-        }
-    }
 }
 
 let makeAmove = function () {
@@ -59,6 +47,7 @@ let selectPiece = function (elem) {
   if (elem.hasChildNodes()) {
     let piece = elem.firstChild.classList[1];
     let side = document.querySelector('input[type=radio]:checked').value;
+    lightenMoveArea(elem.firstChild);
     if (piece === side) {
         document.querySelector('#initial').value = elem.className;
         lightenMoveArea(elem.firstChild);
@@ -72,4 +61,21 @@ let selectPiece = function (elem) {
       document.querySelector('#typeOfMove').value = ':';
       document.querySelector('#target').value = elem.className;
   }
+
+};
+
+let lightenMoveArea = (piece) => {
+    let letterRow = 'abcdefgh';
+    let lightenCoordinate = [];
+    if (piece.classList[0] === 'p') {
+        let x = letterRow.indexOf(piece.parentElement.classList.value[0]);
+        let y = piece.parentElement.classList.value[1];
+        for (let i = 1; i <=2; i += 1) {
+            console.log(x, letterRow[x], Number(y), i, Number(y) + i);
+            lightenCoordinate.push(letterRow[x] + (Number(y) + i));
+            console.log(lightenCoordinate);
+            console.log(letterRow);
+        }
+    }
+
 };
