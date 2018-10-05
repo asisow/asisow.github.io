@@ -1,26 +1,36 @@
+/*Board styles*/
 body {
     background-color: forestgreen;
     counter-reset: number 9;
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
 }
-
 ul, ol {
     list-style: none;
-    width: 80vmin;
-    height: 10vmin;
+    width: 100%;
     display: flex;
     margin: 0;
     padding: 0;
 }
+
+ul {
+    height: 10vmin;
+}
+
 li {
     position: relative;
     min-width: 10vmin;
-    display: flex;
+    display: table-row;
     justify-content: center;
 }
 ol li {
-    font-size: 5vmin;
+    font-size: 4vmin;
+
 }
 ul li {
     display: flex;
@@ -28,6 +38,7 @@ ul li {
     align-items: center;
     background-color: white;
     z-index: 1;
+    display: table-cell;
 }
 
 ul li:nth-child(2n) {
@@ -41,8 +52,8 @@ ul:nth-child(2n) li {
 ul:nth-child(2n) li:nth-child(2n) {
     background-color: white;
 }
-
-.king  {
+/*Pieces div's styles*/
+.K  {
     display: block;
     background: url("chess sprite.png") 0 0;
     width: 100%;
@@ -52,7 +63,7 @@ ul:nth-child(2n) li:nth-child(2n) {
     z-index: 1;
 }
 
-.pawn {
+.p {
     display: block;
     background: url("chess sprite.png") 100px 0;
     width: 100%;
@@ -61,7 +72,7 @@ ul:nth-child(2n) li:nth-child(2n) {
     padding: 0;
 }
 
-.bishop {
+.B {
     display: block;
     background: url("chess sprite.png") 200px 0;
     width: 100%;
@@ -70,7 +81,7 @@ ul:nth-child(2n) li:nth-child(2n) {
     padding: 0;
 }
 
-.knight {
+.N {
     display: block;
     background: url("chess sprite.png") 300px 0;
     width: 100%;
@@ -79,7 +90,7 @@ ul:nth-child(2n) li:nth-child(2n) {
     padding: 0;
 }
 
-.rook {
+.R {
     display: block;
     background: url("chess sprite.png") 400px 0;
     width: 100%;
@@ -88,11 +99,11 @@ ul:nth-child(2n) li:nth-child(2n) {
     padding: 0;
 }
 
-.queen {
+.Q {
     display: block;
     background: url("chess sprite.png") 500px 0;
-    width: 100px;
-    height: 100px;
+    width: 100%;
+    height: 100%;
     margin: 0;
     padding: 0;
 }
@@ -103,6 +114,53 @@ ul:nth-child(2n) li:nth-child(2n) {
 .black {
     background-position-y: 0;
 }
+/*Control element styles*/
+.movementCross {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-left: 3vmin;
+    min-width: 50 vmin;
+}
+
+input[type='text'] {
+    width: 4em;
+    background-color: forestgreen;
+    display: inline-block;
+}
+
+#typeOfMove {
+    width: 1em;
+}
+
+.makeAmove {
+    align-self: stretch;
+}
+
+ .moveCoordinates {
+    display: inline-block !important;
+ }
+
+#hist {
+    disabled;
+    size: 6;
+    width: 10vmin;
+}
+
+.lightenMove {
+    filter: sepia(60%)
+}
+/*board marks styles*/
+ol li {
+    text-align: center;
+    height: 1em;
+}
+ol::before {
+    content: '0';
+    visibility: hidden;
+    font-size: 3em;
+    font-family: "Baskerville Old Face", serif;
+}
 
 ul::before {
     display: flex;
@@ -111,23 +169,4 @@ ul::before {
     content: counter(number) " ";
     font-size: 3em;
     font-family: "Baskerville Old Face", serif;
-}
-
-.movementCross {
-    display: flex;
-    justify-content: start;
-    align-items: flex-start;
-    flex-wrap: wrap;
-    margin-left: 4vmin;
-}
-
-fieldset {
-    flex-wrap: wrap;
-    display: flex;
-    flex-direction: vertical;
-    justify-content: space-between;
-}
-
-textarea {
-    rows: 4;
 }
