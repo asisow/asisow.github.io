@@ -18,19 +18,24 @@ let makeAnOption = (piece, initialPlacement, targetPlacement) => {
     option.innerHTML =  piece.classList[0] + initialPlacement + type + targetPlacement;
     select.appendChild(option);
 }
-
+// Make a move function
 let makeAmove = function () {
-    let side = document.querySelector('input[type=radio]:not(:checked)');
+    //Check if movementCross has data
+    if (document.querySelector('#initial').value && document.querySelector('#target').value) {
+        //Get the player side to check
+        let side = document.querySelector('input[type=radio]:not(:checked)');
+        //Get the initial and target coordinates
     let initialPlacement = document.querySelector('#initial').value;
     let targetPlacement = document.querySelector('#target').value;
-    let final = document.querySelector('.' + targetPlacement);
-    let initial = document.querySelector('.' + initialPlacement);
-    let piece = initial.firstChild;
-    initial.removeChild(piece);
-    final.appendChild(piece);
-    side.checked = true;
-    clearMCross();
-    makeAnOption(piece, initialPlacement, targetPlacement);
+        let final = document.querySelector('.' + targetPlacement);
+        let initial = document.querySelector('.' + initialPlacement);
+        let piece = initial.firstChild;
+        initial.removeChild(piece);
+        final.appendChild(piece);
+        side.checked = true;
+        clearMCross();
+        makeAnOption(piece, initialPlacement, targetPlacement);
+    }
 };
 
 let clearBoard = function () {
@@ -77,5 +82,4 @@ let lightenMoveArea = (piece) => {
             console.log(letterRow);
         }
     }
-
 };

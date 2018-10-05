@@ -133,6 +133,10 @@ input[type='text'] {
     width: 1em;
 }
 
+.makeAmove {
+    align-self: stretch;
+}
+
  .moveCoordinates {
     display: inline-block !important;
  }
