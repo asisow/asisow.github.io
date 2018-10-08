@@ -1,8 +1,26 @@
 const letterRow = 'abcdefgh';
 const figureView = "♕♔♗♘♖♙♛♚♝♞♜♟";
 //
+let drawBoard = () => {
+    for (let i = 0; i < 8; i += 1) {
+        let board = document.querySelector('.board');
+        let row = document.createElement('ul');
+        let numberMark = String(8 - i);
+        for (j = 0; j < 8; j += 1) {
+            let cell = document.createElement('li');
+            let letterMark = letterRow[j];
+            cell.classList.add(letterMark + numberMark);
+            cell.innerHTML = letterMark + numberMark;
+            cell.addEventListener('click', selectPiece(self), false);
+            row.appendChild(cell);
+        }
+        row.classList.add('row');
+        board.appendChild(row);
+    }
+}
 
 let selectPiece = function (elem) {
+   console.log(elem);
   if (elem.hasChildNodes) {
     let piece = elem.firstChild.classList[1];
     let side = document.querySelector('input[type=radio]:checked').value;
@@ -22,23 +40,6 @@ let selectPiece = function (elem) {
   }
 
 };
-let drawBoard = () => {
-    for (let i = 0; i < 8; i += 1) {
-        let board = document.querySelector('.board');
-        let row = document.createElement('ul');
-        let numberMark = String(8 - i);
-        for (j = 0; j < 8; j += 1) {
-            let cell = document.createElement('li');
-            let letterMark = letterRow[j];
-            cell.classList.add(letterMark + numberMark);
-            cell.innerHTML = letterMark + numberMark;
-            cell.addEventListener('click', selectPiece(self), false);
-            row.appendChild(cell);
-        }
-        row.classList.add('row');
-        board.appendChild(row);
-    }
-}
 
 
 

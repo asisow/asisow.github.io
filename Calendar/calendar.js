@@ -18,3 +18,8 @@ for (i = 1; i <= months[currentDate.getMonth()]; i += 1) {
         let daysinMonth = daysInMonths[currentMonth];
         console.log(daysInMonth)
     }
+    console.log(months[currentDate.getMonth()]);
+for (i = 1; i <= months[currentDate.getMonth()]; i += 1) {
+        let currentMonth = documentQuerySelector('.first-month');
+    }
+>>>>>>> 066d08ac4d89647c8821eca12bfadef55683bb8c
