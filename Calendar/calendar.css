@@ -1,0 +1,34 @@
+.calender {
+    min-height: 30vmin;
+    min-width: 30vmin;
+    border: 1px solid red;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+div[class^='date-'] {
+    min-height: 5vmin;
+    min-width: 5vmin;
+    border: 1px solid red;
+    text-align: center;
+    vertical-align: center;
+    line-height: 5vmin;
+}
+
+div[class^='date-']:hover {
+    filter: blur(1px);
+}
+
+div[class$='-grey'] {
+    background-color: grey;
+}
+
+div[class$='-thisMonth'] {
+    background-color: ivory;
+}
+
+div[class$='-current'] {
+    background-color: #c6a;
+}
+
