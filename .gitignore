@@ -1,3 +1,13 @@
+*.tar
+*.tar.*
+*.jar
+*.exe
+*.msi
+*.zip
+*.tgz
+*.log
+*.log.*
+*.sig
 
-Calendar/Example/calendar.js
-Calendar/Example/calendar.css
+pkg/
+src/

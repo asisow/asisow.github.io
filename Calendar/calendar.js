@@ -42,3 +42,9 @@ for (i = 1; i <= daysInMonths[months[currentDate.getMonth()]]; i += 1) {
     board.appendChild(block);
     weekDayOfMonth = (weekDayOfMonth + 1) % 7;
 }
+for (i = 1; i <= months[currentDate.getMonth()]; i += 1) {
+        let currentMonth = documentQuerySelector('.first-month');
+        let daysinMonth = daysInMonths[currentMonth];
+        console.log(daysInMonth)
+    }
+>>>>>>> 529f4e2535792e7fca49be66695384a7ff13dcc4
