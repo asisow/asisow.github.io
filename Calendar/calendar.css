@@ -15,6 +15,9 @@ a[class^='date-'] {
     text-decoration: none;
     transition: all 0.5s;
     position: relative;
+    background-color: skyblue;
+    box-shadow: inset 4px 4px 18px 1px #cb6aa4,
+    inset -4px -4px 18px 1px #a23262;
 }
 
 a[class*='date-']:focus {
@@ -24,23 +27,26 @@ a[class*='date-']:focus {
 }
 
 a[class^='date-']:hover {
-    filter: invert(60%);
+    filter: invert(40%);
     z-index: 1;
 }
 
-a[class$='-grey'] {
-    background-color: grey;
+a[class*='-grey'] {
+    background-color: #6a81af;
 }
 
-a[class$='-thisMonth'] {
-    background-color: ivory;
+a[class*='-thisMonth'] {
 }
 
-a[class$='-current'] {
+a[class*='-current'] {
     background-color: #c6a;
 }
 
 a[class*='Sun'], a[class*='Sat'] {
-    background-color: #b73;
+    filter: hue-rotate(180deg);
+}
+
+a.date-header{
+    background-color: ivory;
 }
 
