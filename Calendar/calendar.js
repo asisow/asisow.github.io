@@ -13,7 +13,6 @@ let createDayBlock = (dateNumber, dayOfWeek, type) => {
     return block;
 }
 //global variables **need to add if statement to determine leap year**
-let daysInYear = 365;
 let daysInMonths = {'January': 31,
                     'February': 28,
                     'March': 31,
@@ -29,6 +28,9 @@ let daysInMonths = {'January': 31,
 const board = document.querySelector(".calendar");
 const months = Object.keys(daysInMonths) //['January','February','March','April','May','June','July','August','September','October','November','February'];
 let currentDate = new Date();
+if (currentDate.getFullYear % 4 === 0) {
+    daysInMonths.February += 1;
+}
 let currentMonth = currentDate.getMonth();
 let week = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', ]
 //determine previous month days quantity and day of week of previous month
@@ -63,6 +65,5 @@ if (weekDayOfMonth < 7) {
         block1.innerHTML = i;
         board.appendChild(block1);
         weekDayOfMonth = (weekDayOfMonth + 1) % 7;
-        console.log(weekDayOfMonth);
     }
 }

@@ -5,6 +5,8 @@
     display: flex;
     flex-wrap: wrap;
     align-items: flex-start;
+    font-family: Oldtown, fantasy;;
+
 }
 
 a[class^='date-'] {
@@ -18,6 +20,7 @@ a[class^='date-'] {
     background-color: skyblue;
     box-shadow: inset 4px 4px 18px 1px #cb6aa4,
     inset -4px -4px 18px 1px #a23262;
+
 }
 
 a[class*='date-']:focus {
