@@ -1,5 +1,5 @@
 //createElement function
-let createElement = (type, cls)=> {
+var createElement = (type, cls)=> {
     let elem = document.createElement(type);
     elem.className = cls;
     return elem
