@@ -56,9 +56,16 @@ ul:nth-child(2n) li:nth-child(2n) {
     color: black;
 }
 /*Pieces div's styles*/
+.black {
+    color: red;
+}
+
+.white {
+    color: #154;
+}
+
 .K  {
     display: block;
-    background: url("chess sprite.png") 0 0;
     width: 100%;
     height: 100%;
     margin: 0;
@@ -68,7 +75,6 @@ ul:nth-child(2n) li:nth-child(2n) {
 
 .p {
     display: block;
-    background: url("chess sprite.png") 100px 0;
     width: 100%;
     height: 100%;
     margin: 0;
@@ -77,7 +83,6 @@ ul:nth-child(2n) li:nth-child(2n) {
 
 .B {
     display: block;
-    background: url("chess sprite.png") 200px 0;
     width: 100%;
     height: 100%;
     margin: 0;
@@ -86,7 +91,6 @@ ul:nth-child(2n) li:nth-child(2n) {
 
 .N {
     display: block;
-    background: url("chess sprite.png") 300px 0;
     width: 100%;
     height: 100%;
     margin: 0;
@@ -95,7 +99,6 @@ ul:nth-child(2n) li:nth-child(2n) {
 
 .R {
     display: block;
-    background: url("chess sprite.png") 400px 0;
     width: 100%;
     height: 100%;
     margin: 0;
@@ -104,18 +107,19 @@ ul:nth-child(2n) li:nth-child(2n) {
 
 .Q {
     display: block;
-    background: url("chess sprite.png") 500px 0;
     width: 100%;
     height: 100%;
     margin: 0;
     padding: 0;
 }
-.white {
-    background-position-y: 100px;
-}
 
-.black {
-    background-position-y: 0;
+.piece {
+    display: block;
+    line-height: 100%;
+    width: 100%;
+    font-size: 10vmin;
+    vertical-align: center;
+    cursor: pointer;
 }
 /*Control element styles*/
 .movementCross {
