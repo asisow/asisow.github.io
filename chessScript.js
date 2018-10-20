@@ -36,8 +36,6 @@ let drawPiece = (piece, place, cls) => {
 }
 
 //initial pieces placement
-let
-let data = requires('server');
 console.log('data recieved');
 let drawPieces = () => {
     drawPiece(figureView[4], 'a1', 'R white piece');
