@@ -36,9 +36,6 @@ let drawPiece = (piece, place, cls) => {
 }
 
 //initial pieces placement
-let
-let data = requires('server');
-console.log('data recieved');
 let drawPieces = () => {
     drawPiece(figureView[4], 'a1', 'R white piece');
     drawPiece(figureView[4], 'h1', 'R white piece');
@@ -63,6 +60,22 @@ let drawPieces = () => {
         drawPiece(figureView[11], letterRow[i] + '7', 'p black piece');
     }
 }
+
+
+var MongoClient = require('mongodb').MongoClient;
+var url = "mongodb://localhost:27017/";
+
+MongoClient.connect(url, function(err, db) {
+  if (err) throw err;
+  var dbo = db.db("mydb");
+  var query = { address: "Park Lane 38" };
+  dbo.collection("customers").find(query).toArray(function(err, result) {
+    if (err) throw err;
+    console.log(result);
+    db.close();
+  });
+});
+console.log('data recieved');
 //select a piece.
 let selectPiece = function (elem) {
   if (elem.hasChildNodes()) {
