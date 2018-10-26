@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chessboard</title>
+    <link rel="stylesheet" href="chessboardStyle.css">
+</head>
+<body onLoad = 'drawBoard()'>
+    <section class="board">
+    </section>
+    <form class='movementCross' method='post'>
+        <fieldset id="colorChange">
+            <legend>Now the turn of</legend>
+            <label for="white">White: <input type="radio" value="white" name="color" checked id="white"></label>
+            <label for="black">Black: <input type="radio" value="black" name="color"  id="black"></label>
+        </fieldset>
+        <fieldset id="'isAMove">
+            <legend>My move is:</legend>
+            <input type="text" class='moveCoordinates' id="initial">
+            <input type="text" class='moveCoordinates' id="typeOfMove">
+            <input type="text" class='moveCoordinates' id="target">
+        </fieldset>
+        <select name='history' id="hist" multiple>
+        </select>
+        <input type="button" class="makeAmove" onclick="makeAmove()" value="Make a move">
+        <input type="button" class="clearBoard" onclick="clearBoard()" value="Clear board">
+   </form>
+
+    <script src="chessScript.js"></script>
+</body>
+</html>

@@ -1,43 +1,17 @@
-var express = require('express');
-var app = express();
-
+const express = require('express');
+const database = require(__dirname + '/Database/MongoDBconnector.js');
 var bodyParser = require("body-parser");
+const app = express();
 app.use(bodyParser.urlencoded({ extended: false }));
 //setting middleware
 app.use(express.static(__dirname + '/')); //Serves resources from public folder
-var MongoClient = require('mongodb').MongoClient;
-var url = "mongodb://localhost:27017/mydb";
-var initialPlacement = [
-    {piece: 'white p', placement: 'a2'},
-    {piece: 'white p', placement: 'b2'},
-    {piece: 'white p', placement: 'c2'},
-    {piece: 'white p', placement: 'd2'}
-]
-let data = MongoClient.connect(url, function(err, db) {
-  if (err) throw err;
-  console.log("Database created!");
 
-  var dbo = db.db('nyDB');
-  dbo.createCollection('ChessPlacement', function (err, res) {
-    if (err) throw err;
-    console.log('collection created!');
-  })
+console.log('app.url')
 
-  dbo.collection('ChessPlacement').insertMany(initialPlacement, function(err, res) {
-    if(err) throw err;
-    console.log('Inserted ' + res.insertedCount + ' pieces');
-  })
-  for (let i = 1; i <= 4; i += 1) {
-  query = {piece: 'white p',
-           placement: 'a' + i}
-  dbo.collection('ChessPlacement').find(query).toArray(function(err, res) {
-    if (err) throw err;
-    console.log(res);
-  })}
-  dbo.close;
-})
+
 
 app.get('/chess', function(req,res) {
+    console.log(app.url);
     res.sendFile(__dirname + '/index.html');
 })
 
