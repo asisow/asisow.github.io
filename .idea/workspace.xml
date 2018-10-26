@@ -1,7 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e46c6d9b-924d-41c2-a1b4-dc3d57839c98" name="Default" comment="" />
+    <list default="true" id="e46c6d9b-924d-41c2-a1b4-dc3d57839c98" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Raven2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chess sprite.png" beforeDir="false" afterPath="$PROJECT_DIR$/static/chess sprite.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chessScript.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/chessScript.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chessboardStyle.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/chessboardStyle.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dbconnect.js" beforeDir="false" afterPath="$PROJECT_DIR$/dbconnect.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/views/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/king.png" beforeDir="false" afterPath="$PROJECT_DIR$/static/king.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notable/app/routes/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/notable/app/routes/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notable/app/routes/note_routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/notable/app/routes/note_routes.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notable/config/db.js" beforeDir="false" afterPath="$PROJECT_DIR$/notable/config/db.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notable/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/notable/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notable/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/notable/server.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/queen.png" beforeDir="false" afterPath="$PROJECT_DIR$/static/queen.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/server.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test.png" beforeDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -26,11 +44,11 @@
         <splitter split-orientation="vertical" split-proportion="0.5">
           <split-first>
             <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-              <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
-                <entry file="file://$PROJECT_DIR$/notable/app/routes/index.js">
+              <file leaf-file-name="server.js" pinned="false" current-in-tab="true">
+                <entry file="file://$PROJECT_DIR$/server.js">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state relative-caret-position="153">
-                      <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+                    <state relative-caret-position="255">
+                      <caret line="15" selection-start-line="15" selection-end-line="15" />
                     </state>
                   </provider>
                 </entry>
@@ -39,11 +57,11 @@
           </split-first>
           <split-second>
             <leaf>
-              <file leaf-file-name="server.js" pinned="false" current-in-tab="true">
-                <entry file="file://$PROJECT_DIR$/notable/server.js">
+              <file leaf-file-name="chessScript.js" pinned="false" current-in-tab="true">
+                <entry file="file://$PROJECT_DIR$/static/chessScript.js">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state relative-caret-position="51">
-                      <caret line="3" column="46" selection-start-line="3" selection-start-column="46" selection-end-line="3" selection-end-column="46" />
+                    <state relative-caret-position="289">
+                      <caret line="59" column="71" lean-forward="true" selection-start-line="59" selection-start-column="71" selection-end-line="59" selection-end-column="71" />
                     </state>
                   </provider>
                 </entry>
@@ -56,11 +74,11 @@
         <splitter split-orientation="vertical" split-proportion="0.5">
           <split-first>
             <leaf>
-              <file leaf-file-name="note_routes.js" pinned="false" current-in-tab="true">
-                <entry file="file://$PROJECT_DIR$/notable/app/routes/note_routes.js">
+              <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+                <entry file="file://$PROJECT_DIR$/views/index.html">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state>
-                      <caret column="31" selection-start-column="31" selection-end-column="31" />
+                    <state relative-caret-position="374">
+                      <caret line="28" selection-start-line="28" selection-end-line="28" selection-end-column="42" />
                     </state>
                   </provider>
                 </entry>
@@ -69,11 +87,11 @@
           </split-first>
           <split-second>
             <leaf>
-              <file leaf-file-name="db.js" pinned="false" current-in-tab="true">
-                <entry file="file://$PROJECT_DIR$/notable/config/db.js">
+              <file leaf-file-name="dbconnect.js" pinned="false" current-in-tab="true">
+                <entry file="file://$PROJECT_DIR$/dbconnect.js">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state relative-caret-position="51">
-                      <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+                    <state relative-caret-position="282">
+                      <caret line="41" column="28" selection-start-line="41" selection-start-column="28" selection-end-line="41" selection-end-column="28" />
                     </state>
                   </provider>
                 </entry>
@@ -122,14 +140,17 @@
         <option value="$PROJECT_DIR$/Calendar/server.js" />
         <option value="$PROJECT_DIR$/server/server.js" />
         <option value="$PROJECT_DIR$/chessboardStyle.css" />
-        <option value="$PROJECT_DIR$/dbconnect.js" />
         <option value="$PROJECT_DIR$/index.html" />
-        <option value="$PROJECT_DIR$/chessScript.js" />
-        <option value="$PROJECT_DIR$/server.js" />
-        <option value="$PROJECT_DIR$/notable/app/routes/note_routes.js" />
         <option value="$PROJECT_DIR$/notable/app/routes/index.js" />
+        <option value="$PROJECT_DIR$/notable/package.json" />
         <option value="$PROJECT_DIR$/notable/config/db.js" />
+        <option value="$PROJECT_DIR$/notable/app/routes/note_routes.js" />
         <option value="$PROJECT_DIR$/notable/server.js" />
+        <option value="$PROJECT_DIR$/chessScript.js" />
+        <option value="C:/SPA/notes-app/server/app.js" />
+        <option value="$PROJECT_DIR$/views/index.html" />
+        <option value="$PROJECT_DIR$/server.js" />
+        <option value="$PROJECT_DIR$/dbconnect.js" />
       </list>
     </option>
   </component>
@@ -140,8 +161,8 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-43" />
-    <option name="y" value="5" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
     <option name="width" value="1918" />
     <option name="height" value="1038" />
   </component>
@@ -150,8 +171,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Course" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -162,25 +181,19 @@
             <path>
               <item name="asisow.github.io" type="b2602c69:ProjectViewProjectNode" />
               <item name="asisow.github.io" type="462c0819:PsiDirectoryNode" />
-              <item name="notable" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="asisow.github.io" type="b2602c69:ProjectViewProjectNode" />
               <item name="asisow.github.io" type="462c0819:PsiDirectoryNode" />
-              <item name="notable" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="asisow.github.io" type="b2602c69:ProjectViewProjectNode" />
-              <item name="asisow.github.io" type="462c0819:PsiDirectoryNode" />
-              <item name="notable" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="routes" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="Course" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -190,6 +203,8 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Sizov\Desktop\asisow.github.io\views" />
+      <recent name="C:\Users\Sizov\Desktop\asisow.github.io\static" />
       <recent name="C:\Users\Sizov\Desktop\asisow.github.io\Calendar" />
     </key>
   </component>
@@ -226,7 +241,7 @@
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.24947916" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.20729166" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="7" />
@@ -252,35 +267,21 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/chessboardStyle.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2312">
-          <caret line="136" column="24" selection-start-line="136" selection-start-column="24" selection-end-line="136" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/chessScript.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1224">
-          <caret line="72" column="40" selection-start-line="72" selection-start-column="40" selection-end-line="72" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
+    <entry file="file://$PROJECT_DIR$/views/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1802">
           <caret line="106" column="19" lean-forward="true" selection-start-line="106" selection-start-column="19" selection-end-line="106" selection-end-column="19" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/chessboardStyle.css">
+    <entry file="file://$PROJECT_DIR$/static/chessboardStyle.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2635">
           <caret line="155" column="23" lean-forward="true" selection-start-line="155" selection-start-column="23" selection-end-line="155" selection-end-column="23" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/chessScript.js">
+    <entry file="file://$PROJECT_DIR$/static/chessScript.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
           <caret line="15" column="59" selection-start-line="15" selection-start-column="59" selection-end-line="15" selection-end-column="59" />
@@ -294,21 +295,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/chessboardStyle.css">
+    <entry file="file://$PROJECT_DIR$/static/chessboardStyle.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="583">
           <caret line="155" column="23" lean-forward="true" selection-start-line="155" selection-start-column="23" selection-end-line="155" selection-end-column="23" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
+    <entry file="file://$PROJECT_DIR$/views/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="478">
           <caret line="106" column="19" lean-forward="true" selection-start-line="106" selection-start-column="19" selection-end-line="106" selection-end-column="19" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/chessScript.js">
+    <entry file="file://$PROJECT_DIR$/static/chessScript.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="617">
           <caret line="65" column="43" selection-start-line="65" selection-start-column="43" selection-end-line="65" selection-end-column="43" />
@@ -322,21 +323,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
+    <entry file="file://$PROJECT_DIR$/views/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="658">
           <caret line="115" column="45" selection-start-line="115" selection-start-column="36" selection-end-line="115" selection-end-column="45" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/chessboardStyle.css">
+    <entry file="file://$PROJECT_DIR$/static/chessboardStyle.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1280">
           <caret line="136" column="24" selection-start-line="136" selection-start-column="24" selection-end-line="136" selection-end-column="24" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/chessScript.js">
+    <entry file="file://$PROJECT_DIR$/static/chessScript.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
           <caret line="23" column="91" selection-start-line="23" selection-start-column="91" selection-end-line="23" selection-end-column="91" />
@@ -396,62 +397,14 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Calendar/requestHandlers" />
-    <entry file="file://$PROJECT_DIR$/Calendar/formidable">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="26" column="16" selection-start-line="26" selection-start-column="16" selection-end-line="26" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Calendar/server.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="22" lean-forward="true" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Calendar/router.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="22" lean-forward="true" selection-start-line="12" selection-start-column="22" selection-end-line="12" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Calendar/requestHandlers.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="688">
-          <caret line="62" column="5" lean-forward="true" selection-start-line="62" selection-start-column="5" selection-end-line="62" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Calendar/server.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="3" selection-start-line="4" selection-start-column="3" selection-end-line="4" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Calendar/server w handlers/server.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="45" selection-start-line="14" selection-start-column="45" selection-end-line="14" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Calendar/server.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Calendar/test.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="30" lean-forward="true" selection-start-line="7" selection-start-column="30" selection-end-line="7" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/Calendar/formidable" />
+    <entry file="file://$PROJECT_DIR$/Calendar/server.js" />
+    <entry file="file://$PROJECT_DIR$/Calendar/router.js" />
+    <entry file="file://$PROJECT_DIR$/Calendar/requestHandlers.js" />
+    <entry file="file://$PROJECT_DIR$/Calendar/server.js" />
+    <entry file="file://$PROJECT_DIR$/Calendar/server w handlers/server.js" />
+    <entry file="file://$PROJECT_DIR$/Calendar/server.js" />
+    <entry file="file://$PROJECT_DIR$/Calendar/test.html" />
     <entry file="file://$PROJECT_DIR$/Calendar/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
@@ -459,13 +412,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server/server.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="3" lean-forward="true" selection-start-line="20" selection-start-column="3" selection-end-line="20" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/server/server.js" />
     <entry file="file://$PROJECT_DIR$/Calendar/calendar.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="668">
@@ -480,45 +427,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dbconnect.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="629">
-          <caret line="37" column="3" selection-start-line="37" selection-start-column="3" selection-end-line="37" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="527">
-          <caret line="31" selection-start-line="31" selection-end-line="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/chessScript.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="692">
-          <caret line="77" column="29" selection-start-line="77" selection-start-column="29" selection-end-line="77" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="32" column="23" selection-start-line="32" selection-start-column="23" selection-end-line="32" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/chessboardStyle.css">
+    <entry file="file://$PROJECT_DIR$/static/chessboardStyle.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1785">
           <caret line="121" column="20" selection-start-line="121" selection-start-column="20" selection-end-line="121" selection-end-column="20" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/notable/app/routes/note_routes.js">
+    <entry file="file://$PROJECT_DIR$/notable/package.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="31" selection-start-column="31" selection-end-column="31" />
+        <state relative-caret-position="238">
+          <caret line="14" column="24" selection-start-line="14" selection-start-column="24" selection-end-line="14" selection-end-column="24" />
         </state>
       </provider>
     </entry>
@@ -529,17 +448,59 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/notable/server.js">
+    <entry file="file://$PROJECT_DIR$/notable/app/routes/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="46" selection-start-line="3" selection-start-column="46" selection-end-line="3" selection-end-column="46" />
+        <state relative-caret-position="68">
+          <caret line="4" column="2" lean-forward="true" selection-start-line="4" selection-start-column="2" selection-end-line="4" selection-end-column="2" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/notable/app/routes/index.js">
+    <entry file="file://C:/SPA/notes-app/server/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+        <state relative-caret-position="119">
+          <caret line="7" column="8" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/notable/server.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" selection-start-line="14" selection-end-line="14" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/notable/app/routes/note_routes.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="765">
+          <caret line="45" column="4" selection-start-line="45" selection-start-column="4" selection-end-line="45" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="28" selection-start-line="28" selection-end-line="28" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/chessScript.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="59" column="71" lean-forward="true" selection-start-line="59" selection-start-column="71" selection-end-line="59" selection-end-column="71" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dbconnect.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="282">
+          <caret line="41" column="28" selection-start-line="41" selection-start-column="28" selection-end-line="41" selection-end-column="28" />
         </state>
       </provider>
     </entry>
