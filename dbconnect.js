@@ -1,38 +1,46 @@
-var express = require('express');
-var app = express();
+const MongoClient = require('mongodb').MongoClient;
+const url = "mongodb://localhost:27017/initialPlacement";
 
-app.get('/', function (req, res) {
-   
-    var sql = require("mssql");
+let basePlacement = [
+    {type: 'p', position: 'a2'},
+    {type: 'p', position: 'b2'},
+    {type: 'p', position: 'c2'}
+];
 
-    // config for your database
-    var config = {
-        user: 'sizov',
-        password: 'H;tdcrbq1984',
-        server: 'msk-portal-web',
-        database: 'WSS_Content'
-    };
-
-    // connect to your database
-    sql.connect(config, function (err) {
-    
-        if (err) console.log(err);
-
-        // create Request object
-        var request = new sql.Request();
-           
-        // query to the database and get the records
-        request.query('SELECT Title, Login from Employees', function (err, recordset) {
-            
-            if (err) console.log(err)
-
-            // send records as a response
-            res.send(recordset);
-            
+exports.initiateChessPlacement = (dbName, collectionName) => {
+    MongoClient.connect(url, {useNewUrlParser: true}, function(err, client) {
+    const db = client.db(dbName)
+    const collection = db.collection(collectionName);
+        if(err) {
+            return console.log(err);
+        }
+        collection.insertMany(basePlacement, function(err, result) {
+            if (err) {
+                return console.log(err);
+            }
+            console.log(result);
         });
-    });
-});
+        client.close;
+    })
+};
+exports.clearBoardToInitial = (dbName, collectionName) => {
+    MongoClient.connect(url, {useNewUrlParser: true}, function(err, client){
+    const db = client.db(dbName)
+    const collection = db.collection(collectionName);
+    if(err) {
+            return console.log(err);
+        }
+    collection.deleteMany({})
+    })
+}
 
-var server = app.listen(5000, function () {
-    console.log('Server is running..');
-});
+exports.getChessPlacement = (dbName, collectionName) => {
+    MongoClient.connect(url, {useNewUrlParser: true}, function(err, client) {
+    if (err) throw err;
+    const db = client.db(dbName)
+    const collection = db.collection(collectionName);
+    console.log(collection);
+    })
+}
+
+module.exports.test = 'Oops!';
