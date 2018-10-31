@@ -15,6 +15,7 @@
     "formidable": "^1.2.1",
     "jade": "^1.11.0",
     "mongodb": "^3.1.8",
+    "mongoose": "^5.3.7",
     "mssql": "^4.2.2",
     "node-static": "^0.7.11"
   }
