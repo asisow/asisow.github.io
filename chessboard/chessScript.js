@@ -37,30 +37,66 @@ let drawPiece = (piece, place, cls) => {
 
 //initial pieces placement
 console.log('data recieved');
-let drawPieces = () => {
-    drawPiece(figureView[4], 'a1', 'R white piece');
-    drawPiece(figureView[4], 'h1', 'R white piece');
-    drawPiece(figureView[3], 'b1', 'N white piece');
-    drawPiece(figureView[3], 'g1', 'N white piece');
-    drawPiece(figureView[2], 'c1', 'B white piece');
-    drawPiece(figureView[2], 'f1', 'B white piece');
-    drawPiece(figureView[0], 'd1', 'Q white piece');
-    drawPiece(figureView[1], 'e1', 'K white piece');
-    for (let i = 0; i < letterRow.length; i += 1) {
-        drawPiece(figureView[5], letterRow[i] + '2', 'p white piece');
-    }
-    drawPiece(figureView[10], 'a8', 'R black piece');
-    drawPiece(figureView[10], 'h8', 'R black piece');
-    drawPiece(figureView[9], 'b8', 'N black piece');
-    drawPiece(figureView[9], 'g8', 'N black piece');
-    drawPiece(figureView[8], 'c8', 'B black piece');
-    drawPiece(figureView[8], 'f8', 'B black piece');
-    drawPiece(figureView[6], 'd8', 'Q black piece');
-    drawPiece(figureView[7], 'e8', 'K black piece');
-    for (let i = 0; i < letterRow.length; i += 1) {
-        drawPiece(figureView[11], letterRow[i] + '7', 'p black piece');
-    }
-}
+let position = [{image: 4, position: 'a1', type: 'R white piece'},
+	{image: 4, position: 'h1', type: 'R white piece'},
+	{image: 3, position: 'b1', type: 'N white piece'},
+	{image: 3, position: 'g1', type: 'N white piece'},
+	{image: 2, position: 'c1', type: 'B white piece'},
+	{image: 2, position: 'f1', type: 'B white piece'},
+	{image: 0, position: 'd1', type: 'Q white piece'},
+	{image: 1, position: 'e1', type: 'K white piece'},
+	{image: 5, position: 'a2', type: 'p white piece'},
+	{image: 5, position: 'b2', type: 'p white piece'},
+	{image: 5, position: 'c2', type: 'p white piece'},
+	{image: 5, position: 'd2', type: 'p white piece'},
+	{image: 5, position: 'e2', type: 'p white piece'},
+	{image: 5, position: 'f2', type: 'P white piece'},
+	{image: 5, position: 'g2', type: 'P white piece'},
+	{image: 5, position: 'h2', type: 'P white piece'},
+//black pieces
+	{image: 4, position: 'a8', type: 'R black piece'},
+	{image: 4, position: 'h8', type: 'R black piece'},
+	{image: 3, position: 'b8', type: 'N black piece'},
+	{image: 3, position: 'g8', type: 'N black piece'},
+	{image: 2, position: 'c8', type: 'B black piece'},
+	{image: 2, position: 'f8', type: 'B black piece'},
+	{image: 0, position: 'd8', type: 'Q black piece'},
+	{image: 1, position: 'e8', type: 'K black piece'},
+	{image: 5, position: 'a7', type: 'p black piece'},
+	{image: 5, position: 'b7', type: 'p black piece'},
+	{image: 5, position: 'c7', type: 'p black piece'},
+	{image: 5, position: 'd7', type: 'p black piece'},
+	{image: 5, position: 'e7', type: 'p black piece'},
+	{image: 5, position: 'f7', type: 'p black piece'},
+	{image: 5, position: 'g7', type: 'p black piece'},
+	{image: 5, position: 'h7', type: 'p black piece'}];
+let drawPieces = () => {for (var piece of position) {
+	drawPiece(figureView[piece.image], piece.position, piece.type);
+}};
+//let drawPieces = () => {
+    //drawPiece(figureView[4], 'a1', 'R white piece');
+    //drawPiece(figureView[4], 'h1', 'R white piece');
+    //drawPiece(figureView[3], 'b1', 'N white piece');
+    //drawPiece(figureView[3], 'g1', 'N white piece');
+    //drawPiece(figureView[2], 'c1', 'B white piece');
+    //drawPiece(figureView[2], 'f1', 'B white piece');
+    //drawPiece(figureView[0], 'd1', 'Q white piece');
+    //drawPiece(figureView[1], 'e1', 'K white piece');
+    //for (let i = 0; i < letterRow.length; i += 1) {
+        //drawPiece(figureView[5], letterRow[i] + '2', 'p white piece');
+    //}
+    //drawPiece(figureView[10], 'a8', 'R black piece');
+    //drawPiece(figureView[10], 'h8', 'R black piece');
+    //drawPiece(figureView[9], 'b8', 'N black piece');
+    //drawPiece(figureView[9], 'g8', 'N black piece');
+    //drawPiece(figureView[8], 'c8', 'B black piece');
+    //drawPiece(figureView[8], 'f8', 'B black piece');
+    //drawPiece(figureView[6], 'd8', 'Q black piece');
+    //drawPiece(figureView[7], 'e8', 'K black piece');
+    //for (let i = 0; i < letterRow.length; i += 1) {
+        //drawPiece(figureView[11], letterRow[i] + '7', 'p black piece');
+    //}
+//}
 //select a piece.
 let selectPiece = function (elem) {
   if (elem.hasChildNodes()) {
@@ -115,11 +151,20 @@ let makeAmove = function () {
         let initial = document.querySelector('.' + document.querySelector('#initial').value);
         let piece = initial.firstChild;
 
+		if (document.querySelector('#typeOfMove').value === 'X') {
+			const beatenPiece = position.find(listedPiece => listedPiece.position === final.classList[0]);
+			console.log(beatenPiece);
+
+			final.innerHTML = '';
+
+		}
+
         initial.removeChild(piece);
         final.appendChild(piece);
         side.checked = true;
         makeAnOption(piece);
-        clearMCross();
+
+		clearMCross();
     }
 };
 
